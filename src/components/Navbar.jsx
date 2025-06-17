@@ -24,12 +24,12 @@ const Navbar = () => {
             >
               About
             </Link>
-            <a
-              href="#events"
+            <Link
+              to="/events"
               className="text-gray-700 hover:text-blue-700 transition"
             >
               Events
-            </a>
+            </Link>
             <Link
               to="/contactform"
               className="text-gray-700 hover:text-blue-700 transition"
@@ -74,30 +74,26 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-md py-3 px-5 absolute w-full top-14 left-0 flex flex-col items-center space-y-4 text-base font-medium">
-          <a
-            href="#about"
+          <Link to="/about"
             className="text-gray-700 hover:text-blue-700 transition"
           >
             About
-          </a>
-          <a
-            href="#alumni"
+          </Link>
+          <Link to="/alumni"
             className="text-gray-700 hover:text-blue-700 transition"
           >
             Alumni
-          </a>
-          <a
-            href="#events"
+          </Link>
+          <Link to="/events"
             className="text-gray-700 hover:text-blue-700 transition"
           >
             Events
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link to="/contact"
             className="text-gray-700 hover:text-blue-700 transition"
           >
             Contact
-          </a>
+          </Link>
           <div className="mt-2 w-full flex flex-col items-center space-y-3">
             <Link
               to="/Signup"
